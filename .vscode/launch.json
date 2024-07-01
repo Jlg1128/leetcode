@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\买卖股票的最佳时机2.js"
+            "program": "${workspaceFolder}/热题一百/括号生成.js"
         }
     ]
 }

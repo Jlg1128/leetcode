@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  h1{
+    color: red;
+  }
+</style>
+<body>
+  <div class="div"></div>
+  <h1>456</h1>
+  <script>
+   const div = document.querySelector('.div');
+   const shadow = div.attachShadow({mode: 'open'});
+   const sheet = new CSSStyleSheet();
+// 应用一条规则到样式表
+sheet.replaceSync("h1 { color: red; }");
+   shadow.adoptedStyleSheets = [sheet];
+   const h1 = document.createElement('h1');
+   h1.innerHTML = '123';
+   shadow.appendChild(h1);
+   console.log(div);
+  </script>
+</body>
+</html>
