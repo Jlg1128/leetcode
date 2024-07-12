@@ -11,7 +11,8 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/热题一百/括号生成.js"
+            "runtimeExecutable": "/Users/jlg1128/.nvm/versions/node/v18.14.2/bin/node",
+            "program": "${workspaceFolder}/热题一百/多数元素.js"
         }
     ]
 }
